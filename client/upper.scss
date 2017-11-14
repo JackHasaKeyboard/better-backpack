@@ -1,0 +1,16 @@
+#upper {
+	padding: 8px;
+	margin: 8px;
+	display: flex;
+
+	> div {
+		margin: 8px;
+	}
+
+	#pic {
+		img {
+			height: 80px;
+			border-radius: 6px;
+		}
+	}
+}

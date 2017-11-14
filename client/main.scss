@@ -1,0 +1,102 @@
+@import "color.scss";
+
+* {
+	color: $tert;
+	font-family: TF2;
+}
+
+html,
+body {
+	margin: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background: #000;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 8px;
+}
+
+option {
+	background: red;
+
+	select {
+		background: blue;
+	}
+}
+
+.scr {
+	padding: 8px;
+	flex-shrink: 0;
+	width: calc(1920px / 2);
+	// height: calc(1080px / 2);
+	background: $prim;
+}
+
+.slot {
+	padding: 8px;
+	margin: 8px;
+	display: flex;
+	flex-direction: column;
+
+	a {
+		padding: 8px;
+		margin: 8px;
+		border-radius: 6px;
+		background: $sec;
+		width: 95px;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+
+		img {
+			height: 80px;
+			margin-top: -10px;
+		}
+	}
+}
+
+.active {
+	background: $tert;
+	color: $sec;
+}
+
+#body {
+	display: flex;
+}
+
+#item, #page {
+	margin: 8px;
+	padding: 8px;
+
+	a {
+		background: $sec;
+		cursor: pointer;
+		display: inline-block;
+		border-radius: 6px;
+		text-align: center;
+		margin: 8px;
+		padding: 8px;
+
+		&.selected {
+			background: white;
+		}
+	}
+}

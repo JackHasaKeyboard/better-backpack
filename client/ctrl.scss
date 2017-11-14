@@ -1,0 +1,36 @@
+@import "color.scss";
+
+#ctrl {
+	padding: 8px;
+	margin: 8px;
+	display: flex;
+
+	> * {
+		padding: 8px;
+		margin: 8px;
+	}
+
+	.tag {
+		background: $sec;
+		border-radius: 6px;
+
+		span {
+			padding: 6px;
+
+			&:nth-child(1) {
+				font-family: TF2;
+			}
+
+			&:nth-child(2) {
+				font-family: TF2 Build;
+			}
+		}
+	}
+
+	#search {
+		border-radius: 6px;
+		margin-left: auto;
+		background: $sec;
+		border: none;
+	}
+}

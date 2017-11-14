@@ -1,0 +1,82 @@
+@import "color";
+
+#loadout {
+	.head {
+		display: flex;
+		align-items: center;
+
+		a {
+			flex-grow: 1;
+			text-align: center;
+
+			img {
+				&.active {
+					background: $tert;
+				}
+
+				padding: 8px;
+				margin: 8px;
+				background: $sec;
+				border-radius: 6px;
+				height: 26px;
+			}
+		}
+	}
+
+	#team {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		#tog {
+			padding: 8px;
+			margin: 8px;
+			display: flex;
+
+			a {
+				padding: 8px;
+
+				&#red {
+					border: 6px solid $red;
+					border-radius: 6px 0 0 6px;
+
+					&.active {
+						background: $red;
+					}
+				}
+
+				&#blu {
+					border: 6px solid $blu;
+					border-radius: 0 6px 6px 0;
+
+					&.active {
+						background: $blu;
+					}
+				}
+			}
+		}
+	}
+
+	#scape {
+		display: flex;
+
+		.tab {
+			padding: 8px;
+			margin: 8px;
+			width: 116px;
+
+			a {
+				padding: 8px;
+				margin: 8px;
+				display: inline-block;
+				width: 26px;
+				height: 26px;
+				border-radius: 6px;
+				line-height: 30px;
+				text-align: center;
+				background: $sec;
+				font-family: TF2 Build;
+			}
+		}
+	}
+}

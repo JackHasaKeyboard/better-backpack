@@ -1,0 +1,22 @@
+@import "color.scss";
+
+#disp {
+	width: 260px;
+	margin: 8px;
+	padding: 8px;
+
+	> * {
+		margin: 8px;
+		padding: 8px;
+	}
+
+	img {
+		background: $sec;
+		border-radius: 6px;
+		height: 200px;
+	}
+
+	h3 {
+		font-family: TF2 Build;
+	}
+}
