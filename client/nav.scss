@@ -1,0 +1,12 @@
+#nav {
+	padding: 8px;
+	margin: 8px;
+	display: flex;
+
+	a {
+		padding: 8px;
+		margin: 8px;
+		flex-grow: 1;
+		text-align: center;
+	}
+}

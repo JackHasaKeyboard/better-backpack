@@ -78,7 +78,7 @@ export default class Backpack extends Component {
 
 	render() {
 		return (
-			<div className="scr">
+			<div>
 				<Ctrl />
 
 				<Item p={this.state.p} />

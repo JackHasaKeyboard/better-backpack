@@ -10,27 +10,25 @@
 		margin: 8px;
 	}
 
-	.tag {
-		background: $sec;
-		border-radius: 6px;
-
-		span {
-			padding: 6px;
-
-			&:nth-child(1) {
-				font-family: TF2;
-			}
-
-			&:nth-child(2) {
-				font-family: TF2 Build;
-			}
-		}
-	}
-
 	#search {
 		border-radius: 6px;
-		margin-left: auto;
 		background: $sec;
-		border: none;
+		margin-left: auto;
+		height: 14px;
+
+		.tag {
+			border-radius: 6px;
+			padding-left: 4px;
+			padding-right: 4px;
+
+			span {
+				padding-left: 4px;
+				padding-right: 4px;
+
+				&:nth-child(2) {
+					font-family: TF2 Build;
+				}
+			}
+		}
 	}
 }

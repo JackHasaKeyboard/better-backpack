@@ -25,7 +25,6 @@ export default class Head extends Component {
 	render() {
 		return (
 			<div id="ctrl">
-				{/* <input id="search" type="text" /> */}
 				<div id="search">
 					<span className="tag">
 						<span>Quality</span>
@@ -33,10 +32,18 @@ export default class Head extends Component {
 						<span className="strange">Strange</span>
 					</span>
 
+					{
+						/* <span className="tag">
+							<span>Name</span>
+							:
+							<span>/Crate/</span>
+							</span> */
+					}
+
 					<span className="tag">
-						<span>Name</span>
+						<span>Class</span>
 						:
-						<span>/Crate/</span>
+						<span>Demoman</span>
 					</span>
 				</div>
 

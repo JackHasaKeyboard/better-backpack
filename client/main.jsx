@@ -6,6 +6,7 @@ import { render } from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Head from '../imports/Head.jsx';
+import Nav from '../imports/Nav.jsx';
 
 import Backpack from '../imports/Backpack.jsx';
 import Loadout from '../imports/Loadout.jsx';

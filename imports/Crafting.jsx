@@ -7,8 +7,6 @@ export default class Crafting extends Component {
 		super(props);
 
 		this.state = {
-			items: [],
-			recipe: []
 		}
 	}
 
@@ -20,25 +18,31 @@ export default class Crafting extends Component {
 		axios.get(asset).then(function(json) {
 			var items = json.data.result.items;
 
+			var equip = {
+				"The Chargin' Targe": "http://media.steampowered.com/apps/440/icons/c_targe.2f2c6d5e62347479380104bed97544f768532cef.png",
+				"The Pain Train": "http://media.steampowered.com/apps/440/icons/c_paintrain.404e9f91bbdac2b9aa50f2354ec6904cc942bb8c.png",
+				"The Persian Persuader": "http://media.steampowered.com/apps/440/icons/c_demo_sultan_sword.e14eafeb8583215a20d48e52d46d1bf1ff885ff2.png"
+			};
+
+			var recipe = items.filter(function(item) {
+				return item.name == "The Pain Train"
+			});
+
 			this.setState({
-				items: [
-					items[0],
-					items[3],
-					items[2]
-				],
-				recipe: items[0]
+				i: equip,
+				o: recipe
 			});
 		}.bind(this));
 	}
 
 	i() {
-		if (this.state.items) {
+		if (this.state.i) {
 			return (
 				<div className="slot">
 					{
-						this.state.items.map((item) => (
+						Object.keys(this.state.i).map((name) => (
 							<a>
-								<img src={item.image_url} />
+								<img src={this.state.i[name]} />
 							</a>
 						))
 					}
@@ -48,15 +52,12 @@ export default class Crafting extends Component {
 	}
 
 	o() {
-		if (this.state.recipe) {
+		if (this.state.o) {
 			return (
 				<div className="slot">
-					{
-						<a>
-							<img src={this.state.recipe.image_url} />
-							<span>{this.state.recipe.name}</span>
-						</a>
-					}
+					<a>
+						{this.state.o.image_url}
+					</a>
 				</div>
 			)
 		}
@@ -73,6 +74,12 @@ export default class Crafting extends Component {
 
 				<div id="o">
 					<h3>Output</h3>
+
+					<input value="class tok" type="" />
+
+					<div className="highLight">
+						Dynamic
+					</div>
 
 					{this.o()}
 				</div>

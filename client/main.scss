@@ -34,12 +34,12 @@ h6 {
 	margin: 8px;
 }
 
-option {
-	background: red;
-
-	select {
-		background: blue;
-	}
+input {
+	padding: 8px;
+	margin: 8px;
+	border: 0;
+	border-radius: 6px;
+	background: $sec;
 }
 
 .scr {
@@ -48,6 +48,10 @@ option {
 	width: calc(1920px / 2);
 	// height: calc(1080px / 2);
 	background: $prim;
+
+	#body {
+		display: flex;
+	}
 }
 
 .slot {
@@ -65,21 +69,7 @@ option {
 		height: 60px;
 		display: flex;
 		justify-content: center;
-
-		img {
-			height: 80px;
-			margin-top: -10px;
-		}
 	}
-}
-
-.active {
-	background: $tert;
-	color: $sec;
-}
-
-#body {
-	display: flex;
 }
 
 #item, #page {
@@ -98,5 +88,19 @@ option {
 		&.selected {
 			background: white;
 		}
+
+		&.active {
+			background: $tert;
+			color: $sec;
+		}
 	}
+}
+
+.highLight {
+	padding: 8px;
+	position: absolute;
+	display: inline-block;
+	font-size: 16px;
+	color: $sec;
+	background: yellow;
 }

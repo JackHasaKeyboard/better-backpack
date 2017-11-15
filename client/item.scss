@@ -1,18 +1,21 @@
+@import "color";
+
 .head {
 	padding: 8px;
+	margin: 8px;
 
 	span {
 		margin: 8px;
-	}
 
-	#name {
-		color: yellow;
+		&#name {
+			color: #FFD700;
+		}
 	}
 }
 
 #item {
 	a {
-		width: 95px;
+		width: 100px;
 		height: 60px;
 	}
 

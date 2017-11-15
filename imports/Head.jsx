@@ -45,7 +45,9 @@ export default class Upper extends Component {
 				</div>
 
 				<div id="info">
-					<h1>{this.state.name}</h1>
+					<h1>
+						{this.state.name}
+					</h1>
 				</div>
 			</div>
 		)
