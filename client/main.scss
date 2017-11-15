@@ -58,32 +58,28 @@ input {
 	padding: 8px;
 	margin: 8px;
 	display: flex;
-	flex-direction: column;
 
 	a {
 		padding: 8px;
 		margin: 8px;
 		border-radius: 6px;
 		background: $sec;
-		width: 95px;
-		height: 60px;
-		display: flex;
-		justify-content: center;
 	}
 }
 
 #item, #page {
-	margin: 8px;
 	padding: 8px;
+	margin: 8px;
+	display: flex;
+	flex-wrap: wrap;
 
 	a {
+		padding: 8px;
+		margin: 8px;
+		border-radius: 6px;
 		background: $sec;
 		cursor: pointer;
-		display: inline-block;
-		border-radius: 6px;
 		text-align: center;
-		margin: 8px;
-		padding: 8px;
 
 		&.selected {
 			background: white;
@@ -98,6 +94,7 @@ input {
 
 .highLight {
 	padding: 8px;
+	margin: 8px;
 	position: absolute;
 	display: inline-block;
 	font-size: 16px;

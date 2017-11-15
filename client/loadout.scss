@@ -10,15 +10,15 @@
 			text-align: center;
 
 			img {
-				&.active {
-					background: $tert;
-				}
-
 				padding: 8px;
 				margin: 8px;
 				background: $sec;
 				border-radius: 6px;
 				height: 26px;
+
+				&.active {
+					background: $tert;
+				}
 			}
 		}
 	}

@@ -1,4 +1,6 @@
-#page a {
-	font-family: TF2 Build;
-	width: 60px;
+#page {
+	a {
+		width: calc(10% - 32px);
+		font-family: TF2 Build;
+	}
 }

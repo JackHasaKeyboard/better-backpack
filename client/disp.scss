@@ -1,18 +1,18 @@
 @import "color.scss";
 
 #disp {
-	margin: 8px;
 	padding: 8px;
+	margin: 8px;
 
 	> * {
-		margin: 8px;
 		padding: 8px;
+		margin: 8px;
 	}
 
 	img {
-		background: $sec;
-		border-radius: 6px;
 		height: 204px;
+		border-radius: 6px;
+		background: $sec;
 	}
 
 	h3 {

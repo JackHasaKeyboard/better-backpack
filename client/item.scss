@@ -15,11 +15,11 @@
 
 #item {
 	a {
-		width: 100px;
+		width: calc(20% - 32px);
 		height: 60px;
-	}
 
-	img {
-		height: 64px;
+		img {
+			height: 64px;
+		}
 	}
 }
