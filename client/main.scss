@@ -1,5 +1,20 @@
 @import "color.scss";
 
+@font-face {
+	font-family: TF2;
+	src: url('/fonts/TF2.ttf');
+}
+
+@font-face {
+	font-family: TF2 Secondary;
+	src: url('/fonts/TF2 Secondary.ttf');
+}
+
+@font-face {
+	font-family: TF2 Build;
+	src: url('/fonts/TF2 Build.ttf');
+}
+
 * {
 	color: $tert;
 	font-family: TF2;
