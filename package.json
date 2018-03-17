@@ -5,12 +5,14 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "axios": "^0.17.0",
+    "@babel/runtime": "^7.0.0-beta.42",
+    "axios": "^0.17.1",
     "babel-runtime": "^6.26.0",
-    "lodash": "^4.17.4",
+    "core-js": "^2.5.3",
+    "lodash": "^4.17.5",
     "meteor-node-stubs": "~0.2.4",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-native-fs": "^2.8.5",
     "react-router-dom": "^4.2.2",
     "steam-user-inventory": "^4.2.0",
